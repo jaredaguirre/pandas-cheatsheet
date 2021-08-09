@@ -56,15 +56,17 @@ car_data
 (axis=1) means a column
 
 ```python
-# Import
+# Import from local
 car_sales = pd.read_csv('car-sales.csv')
-car_sales
+
+# Import from URL
+heart_disease = pd.read_csv("https://raw.githubusercontent.com/mrdbourke/zero-to-mastery-ml/master/data/heart-disease.csv")
 
 # Export
 car_sales.to_csv('exported_car_sales.csv')
 car_sales.to_csv('exported_car_sales.csv', index=False) # To export it with the index column as part of the table
 ```
-The imported file car_sales would be like this:
+The first imported file car_sales would be like this:
 
 |  | Make	   |Colour	|Odometer(KM)	|Doors	  |Price     |
 |--|---------|--------|-------------|---------|----------|
