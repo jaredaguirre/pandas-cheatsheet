@@ -42,11 +42,11 @@ colors = pd.Series(['Red', 'Blue', 'White'])
 car_data = pd.DataFrame({'car': series, 'color': colors})   # Dataframes are 2-dimensional
 car_data
 
-#car	color
+#  car	  color
 #-------------------
-#0	  BMW	Red
-#1	  Toyota	Blue
-#2	  Honda	White
+#0 BMW	  Red
+#1 Toyota	Blue
+#2 Honda	White
 
 ```
 
@@ -62,6 +62,7 @@ car_sales
 
 # Export
 car_sales.to_csv('exported_car_sales.csv')
+car_sales.to_csv('exported_car_sales.csv', index=False) # To export it with the index column as part of the table
 ```
 The imported file car_sales would be like this:
 
