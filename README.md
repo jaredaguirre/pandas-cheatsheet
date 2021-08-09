@@ -25,7 +25,9 @@ The awesome Data Analysis tool! This cheatsheet will cover the following feature
 
 ---
 
-## Series
+## Series & Dataframes
+
+`(axis=0)` means a row, `(axis=1)` means a column.
 
 ```python
 import pandas as pd
@@ -33,8 +35,8 @@ series = pd.Series(["BMW", "Toyota", "Honda"])  # Series are 1-dimensional
 series
 
 #0       BMW
-#1    Toyota
-#2     Honda
+#1       Toyota
+#2       Honda
 #dtype: object
 
 colors = pd.Series(['Red', 'Blue', 'White'])
@@ -51,9 +53,6 @@ car_data
 ```
 
 ## Import and export
-
-(axis=0) means a row
-(axis=1) means a column
 
 ```python
 # Import from local
