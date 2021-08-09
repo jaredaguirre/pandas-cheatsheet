@@ -60,16 +60,17 @@ car_data
 car_sales = pd.read_csv('car-sales.csv')
 car_sales
 
-#   Make	    Colour	Odometer(KM)	Doors	  Price
-#------------------------------------------------------
-#0	Toyota	  White	  150043	      4	      $4,000.00
-#1	Honda	    Red	    87899	        4	      $5,000.00
-#2	Toyota	  Blue	  32549	        3	      $7,000.00
-#3	BMW	      Black	  11179	        5	      $22,000.00
-#4	Nissan	  White	  213095	      4	      $3,500.00
-
 # Export
 car_sales.to_csv('exported_car_sales.csv')
 ```
+The imported file car_sales would be like this:
+
+|  | Make	   |Colour	|Odometer(KM)	|Doors	  |Price     |
+|--|---------|--------|-------------|---------|----------|
+|0 |Toyota	 |White	  |150043	      |4	      |$4,000.00 |
+|1 |Honda	   |Red	    |87899	      |4	      |$5,000.00 |
+|2 |Toyota	 |Blue	  |32549	      |3	      |$7,000.00 |
+|3 |BMW	     |Black	  |11179	      |5	      |$22,000.00|
+|4 |Nissan	 |White	  |213095	      |4	      |$3,500.00 |
 
 
